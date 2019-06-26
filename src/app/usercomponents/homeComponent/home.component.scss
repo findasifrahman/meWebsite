@@ -1,0 +1,28 @@
+@import '../../styles-variables';
+
+abe-header {
+  nav {
+    width: 100%;
+  }
+
+  @media (min-width: map-get($grid-breakpoints, sm)) {
+    nav {
+      width: 80%;
+    }
+  }
+}
+
+.container{
+  margin-left: 50px;
+  margin-right:50px;
+}
+
+ngx-gallery /deep/ ngx-gallery-image .ngx-gallery-arrow {
+  background-color: orangered;
+}
+ngx-gallery /deep/ ngx-gallery-thumbnails .ngx-gallery-arrow {
+  background-color: orangered;
+}
+ngx-gallery /deep/ ngx-gallery-preview .ngx-gallery-arrow {
+  background-color: orangered;
+}

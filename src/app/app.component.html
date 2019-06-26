@@ -1,0 +1,36 @@
+<mat-toolbar color="primary" style="height: 30px">
+    <mat-toolbar-row>
+      <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>Asif Rahman</span>
+      <span class="right-align"></span>
+      <div fxShow="true" fxHide.lt-md>
+        <!-- The following menu items will be hidden on both SM and XS screen sizes -->
+        <a href="/" mat-button>Home</a>
+        <a href="/projects" mat-button>My Projects</a>
+        <a href="#" mat-button>Gallery</a>
+        <a href="#" mat-button>Find Me</a>
+        <a href="#" mat-button>Clients</a>
+
+      </div>
+    </mat-toolbar-row>
+</mat-toolbar>
+  <mat-sidenav-container fxFlexFill>
+      <mat-sidenav #sidenav>
+        <mat-nav-list>
+          <a (click)="sidenav.toggle()" href="" mat-list-item>Close</a>
+          <a href="/" mat-button>Home</a>
+          <a href="/projects" mat-button>My Projects</a>
+          <a href="#" mat-button>Gallery</a>
+          <a href="#" mat-button>Find Me</a>
+          <a href="#" mat-button>Clients</a>
+        </mat-nav-list>
+      </mat-sidenav>
+      <mat-sidenav-content fxFlexFill>
+        <router-outlet></router-outlet>
+
+      </mat-sidenav-content>
+</mat-sidenav-container>
+
+
