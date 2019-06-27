@@ -1,10 +1,12 @@
 <div class='container'>
-  <img [src]='image1url' />
-  <div id='content' ></div>
+  <img [src]='image1url' width="100%" />
+  <br/>
+  <div id='content' width="100%" >
+  </div>
  <!-- <app-moredetails image2u="{{image2url}}"></app-moredetails> -->
 </div>
 
 <br/>
-<div class='container' style='text-align: center'>
-  <button (click)='moreDetails()' mat-raised-button color="accent">More Derails</button>
+<div class='container' style='text-align: center' [hidden]='showButton'>
+  <button (click)='moreDetails()'  mat-raised-button color="accent">More Derails</button>
 </div>

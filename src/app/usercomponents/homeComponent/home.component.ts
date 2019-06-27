@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit{
               'previewKeyboardNavigation': true,
               'imageBullets': true,
               'imageAutoPlay': true,
-              width: '600px',
+              width: '100%',
               height: '400px',
               thumbnailsColumns: 4,
               imageAnimation: NgxGalleryAnimation.Slide

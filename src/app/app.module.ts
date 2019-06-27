@@ -4,6 +4,7 @@ import { SharedmodulesModule } from './commonmodule/sharedmodule/sharedmodules.m
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { NgxGalleryModule } from 'ngx-gallery';
 import { createCustomElement } from '@angular/elements';
 
@@ -13,6 +14,9 @@ import { ProjectComponent } from './usercomponents/projectComponent/project.comp
 import { ProductviewcardComponent } from './usercomponents/productviewcard/productviewcard.component';
 import { ProductdetailComponent } from './usercomponents/productdetail/productdetail.component';
 import { MoredetailsComponent } from './usercomponents/moredetails/moredetails.component';
+import { CertificatesComponent } from './usercomponents/certificates/certificates.component';
+import { ClientsComponent } from './usercomponents/clients/clients.component';
+import { FindmeComponent } from './usercomponents/findme/findme.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +25,10 @@ import { MoredetailsComponent } from './usercomponents/moredetails/moredetails.c
     ProjectComponent,
     ProductviewcardComponent,
     ProductdetailComponent,
-    MoredetailsComponent
+    MoredetailsComponent,
+    CertificatesComponent,
+    ClientsComponent,
+    FindmeComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +37,7 @@ import { MoredetailsComponent } from './usercomponents/moredetails/moredetails.c
     SharedmodulesModule,
     NgxGalleryModule
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent],
   entryComponents: [MoredetailsComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

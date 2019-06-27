@@ -8,7 +8,7 @@ import { ProductService } from '../services/product.service';
   styleUrls: ['./productdetail.component.scss']
 })
 export class ProductdetailComponent implements OnInit {
-
+  showButton : boolean = false;
   constructor(private router: Router, private route: ActivatedRoute,private pservice: ProductService) { }
   image1url: string;
   image2url: string;
@@ -23,6 +23,7 @@ export class ProductdetailComponent implements OnInit {
     })
   }
   moreDetails(){
+    this.showButton = true;
     const tile = document.createElement('app-moredetails');
     tile.setAttribute('image2u', this.image2url);
 
