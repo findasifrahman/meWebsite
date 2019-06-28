@@ -28,8 +28,8 @@ export class HomeComponent implements OnInit{
               breakpoint: 800,
               width: '100%',
               height: '600px',
-              imagePercent: 80,
-              thumbnailsPercent: 20,
+              imagePercent: 90,
+              thumbnailsPercent: 10,
               thumbnailsMargin: 20,
               thumbnailMargin: 20
           },
@@ -42,24 +42,24 @@ export class HomeComponent implements OnInit{
 
       this.galleryImages = [
           {
-              small: 'assets/1-small.jpg',
-              medium: 'assets/1-medium.jpg',
-              big: 'assets/1-big.jpg'
+              small: 'assets/1-small.png',
+              medium: 'assets/1-medium.png',
+              big: 'assets/1-big.png'
           },
           {
-              small: 'assets/2-small.jpg',
-              medium: 'assets/2-medium.jpg',
-              big: 'assets/2-big.jpg'
+              small: 'assets/2-small.png',
+              medium: 'assets/2-medium.png',
+              big: 'assets/2-big.png'
           },
           {
-              small: 'assets/3-small.jpg',
-              medium: 'assets/3-medium.jpg',
-              big: 'assets/3-big.jpg'
+              small: 'assets/3-small.png',
+              medium: 'assets/3-medium.png',
+              big: 'assets/3-big.png'
           },
           {
-            small: 'assets/4-small.jpg',
-            medium: 'assets/4-medium.jpg',
-            big: 'assets/4-big.jpg'
+            small: 'assets/4-small.png',
+            medium: 'assets/4-medium.png',
+            big: 'assets/4-big.png'
         }
       ];
   }
