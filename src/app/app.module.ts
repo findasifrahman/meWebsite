@@ -8,6 +8,8 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { NgxGalleryModule } from 'ngx-gallery';
 import { createCustomElement } from '@angular/elements';
 
+import { PinchZoomModule } from 'ngx-pinch-zoom';
+
 import { HomeComponent } from './usercomponents/homeComponent/home.component';
 import { FooterComponent } from './usercomponents/footer/footer.component';
 import { ProjectComponent } from './usercomponents/projectComponent/project.component';
@@ -35,7 +37,8 @@ import { FindmeComponent } from './usercomponents/findme/findme.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     SharedmodulesModule,
-    NgxGalleryModule
+    NgxGalleryModule,
+    PinchZoomModule
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent],
